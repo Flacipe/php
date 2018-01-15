@@ -1,0 +1,8 @@
+blog_homepage:
+    path:     /
+    defaults: { _controller: MaxenceBlogBundle:Default:index }
+blog_showarticle:
+    path: /article/{id}
+    defaults: {_controller: MaxenceBlogBundle:Default:showArticle}
+    requirements:
+       id: '\d+'
